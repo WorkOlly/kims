@@ -1,0 +1,303 @@
+.about {
+  &-page {
+    .h2-title {
+      @include centertxt;
+      margin-bottom: 60px;
+      @include r(767) {
+        margin-bottom: 40px;
+      }
+    }
+    .content__section {
+      border-top: none;
+    }
+  }
+  &-stat {
+    border-bottom: 1px solid #D8DDE1;
+    position: relative;
+    @include r(767) {
+      padding-top: 60px;
+      padding-bottom: 44px;
+      border-bottom: none;
+      &:before {
+        content: '';
+        width: calc(100% - 30px);
+        height: 1px;
+        background: #D8DDE1;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__item{
+      border: 1px solid #D8DDE1;
+      padding: 50px 26px;
+      display: flex;
+      flex-direction: column;
+      @include r(767) {
+        margin-bottom: 16px;
+      }
+    }
+    &__title {
+      font-size: 50px;
+      color: $green;
+      margin-bottom: 16px;
+      line-height: 110%;
+      @include centertxt;
+    }
+    &__desc {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      line-height: 1;
+      @include fr;
+      @include centertxt;
+    }
+  }
+  &-history {
+    @include r(767) {
+      padding: 60px 0;
+    }
+    .row {
+      @include rmin(768) {
+        margin: 0;
+      }
+    }
+  }
+  &-advantages {
+    @include r(767) {
+      padding-top: 60px;
+      padding-bottom: 12px;
+    }
+    &__item {
+      margin-bottom: 38px;
+      @include r(767) {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+      @include r(600) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+    &__img {
+      max-height: 80px;
+      width: auto;
+      margin-bottom: 20px;
+    }
+    &__desc {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 140%;
+      text-align: center;
+      @include fr;
+
+    }
+  }
+  &-timeline {
+    width: 100%;
+    padding: 5px 50px 0;
+    position: relative;
+    @include r(767) {
+      padding: 0 0 60px 0;
+      &-buttons {
+        display: none;
+      }
+    }
+    &-dates {
+      padding-top: 20px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        border-top: 1px dashed #D8DDE1;
+        width: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        padding-top: 16px;
+        font-size: 16px;
+        padding-bottom: 24px;
+        position: relative;
+        @include fr;
+        @include r(767) {
+          font-size: 14px;
+          padding-top: 28px;
+          color: #B0BDCA;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          height: 24px;
+          width: 24px;
+          top: -12px;
+          border: 1px solid #D8DDE1;
+          border-radius: 100%;
+          background: $white;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1;
+        }
+        &-active {
+          padding-top: 50px;
+          font-size: 24px;
+          font-weight: 700;
+          @include r(767) {
+            font-size: 20px;
+            color: #001E37;
+        }
+          &:before {
+            height: 40px;
+            width: 40px;
+            top: -20px;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+            z-index: 1;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            height: 14px;
+            width: 14px;
+            border-radius: 100%;
+            background: $green;
+            top: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+          }
+        }
+        .timeline-solid {
+          content: '';
+          position: absolute;
+          height: 1px;
+          left: 0;
+          right: 0;
+          top: 0;
+          background: #D8DDE1;
+        }
+        &:first-of-type {
+          .timeline-solid {
+            width: 50%;
+            right: 0;
+            left: auto;
+          }
+        }
+        &:last-of-type {
+          .timeline-solid {
+            width: 50%;
+            right: auto;
+            left: 0;
+          }
+        }
+        &-next,
+        &-prev {
+          color: #5B6A74;
+        }
+      }
+    }
+    &-contents {
+      .swiper-slide {
+        opacity: 0;
+        padding-top: 19px;
+        position: relative;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        span {
+          display: inline-block;
+          max-width: 200px;
+          @include r(767) {
+            max-width: 150px;
+          }
+        }
+        @include r(767) {
+          font-size: 14px;
+        }
+      }
+      .swiper-slide-active {
+        opacity: 1;
+        &:before {
+          content: '';
+          position: absolute;
+          height: 1px;
+          width: 30px;
+          background: #D8DDE1;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &-button{
+      &-nav {
+        height: 50px;
+        width: 50px;
+        border: 1px solid #86BC25;
+        top: 0;
+        position: absolute;
+        cursor: pointer;
+        .icon {
+          font-size: 1em;
+          width: 1em;
+          color: #001E37;
+          @include vcenter;
+        }
+        &.swiper-button-disabled {
+          border: 1px solid #B0BDCA;
+          color: #7A8790;
+          .icon {
+            color: #7A8790;
+          }
+        }
+      }
+      &--prev {
+        left: 0;
+      }
+      &--next {
+        right: 0;
+      }
+    }
+    &__pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      bottom: 0;
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        border: 1px solid #B0BDCA;
+        background: #fff;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #f3f8ea;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        border: none;
+
+        &:before {
+          content: '';
+          height: 12px;
+          width: 12px;
+          background: $green;
+          border-radius: 50%;
+          @include vcenter
+        }
+      }
+    }
+  }
+}

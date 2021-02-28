@@ -1,0 +1,53 @@
+
+.content {
+  &__section {
+    border-top: 1px solid #D8DDE1;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @include r(767) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__scroll {
+    margin: 0 auto;
+    max-width: 900px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 200px;
+    @include r(1023) {
+      margin-right: -12px;
+    }
+    p {
+      color: $grey;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  margin: 0 !important;
+  width: 0 !important;
+  background: #85bc25 !important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #85bc25 !important;
+  width: 3px !important;
+}
+
+.mCSB_draggerContainer {
+  &:before {
+    position: absolute;
+    top: 0;
+    background: #d4dbdd;
+    content: '';
+    width: 1px;
+    height: 100%;
+    right: 8px;
+  }
+}
+

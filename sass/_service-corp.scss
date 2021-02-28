@@ -1,0 +1,11 @@
+.corp-service{
+  &-page {
+    .clean-types {
+      border-bottom: 1px solid #D8DDE1;
+      @include r(960) {
+        border-bottom: 0;
+        padding: 60px 0;
+      }
+    }
+  }
+}

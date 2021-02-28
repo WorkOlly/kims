@@ -1,0 +1,102 @@
+.price {
+  @include fr;
+  padding: 20px 0 120px;
+  &-filter {
+    background-color: $white;
+    &__wrap {
+      .price-filter__item {
+        position: relative;
+        &.checked-service {
+          &:before {
+            content: '';
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            background-color: $green;
+            right: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+          }
+          &.active {
+            &:before {
+              background-color: $white;
+            }
+          }
+        }
+      }
+    }
+    &__item {
+      padding: 20px 30px;
+      display: block;
+      font-size: 16px;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &.active {
+        background-color: $green;
+        color: $white;
+      }
+    }
+  }
+  &_show-choice {
+    padding-left: 40px;
+    position: relative;
+    text-decoration: underline;
+    &:before {
+      content: url("../images/all-choise.svg");
+      position: absolute;
+      left: 0;
+    }
+    &-btn {
+      background-color: $white;
+      padding: 34px 38px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+    }
+  }
+  &-choice {
+    padding: 16px 0;
+    border-bottom: 1px solid $dark-blue;
+    &_name {
+      font-weight: 700;
+    }
+  }
+  .price-tb{
+    &_head {
+      .flex-col {
+        font-size: 10px;
+      }
+      @include r(1365) {
+        flex-wrap: wrap;
+        .price-tb_col-sm {
+          order: 2;
+        }
+        .price-tb_col-bg {
+          order: 1;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    &_service-name {
+      text-transform: none;
+      letter-spacing: 0.03em;
+    }
+    &_col-sm {
+      max-width: 286px;
+      @include r(1365) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  .price-tb_col-sm {
+    @include r(1365) {
+      margin-bottom: 16px;
+    }
+  }
+}

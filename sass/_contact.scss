@@ -1,0 +1,31 @@
+.contact {
+  padding: 20px 0 150px;
+  &-page {
+    .content__section {
+      background: $light-grey;
+      border-top: none;
+      padding: 100px 0;
+    }
+  }
+  &-form{
+    &__block {
+      padding: 150px 0 140px;
+    }
+    .main-btn {
+      width: 100%;
+    }
+  }
+}
+.choose {
+  &-city {
+    .select2{
+      &-container {
+        width: 100%;
+      }
+    }
+
+  }
+}
+.map {
+    height: 663px;
+}

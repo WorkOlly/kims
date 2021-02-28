@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  li {
+    display: inline-flex;
+    height: 50px;
+    min-width: 50px;
+    justify-content: center;
+    align-items: center;
+    @include r('767') {
+      height: 35px;
+      min-width: 35px;
+    }
+    &.active {
+      border: 1px solid $green;
+    }
+    .icon {
+      height: 16px;
+      width: 8px;
+      color: $grey;
+    }
+  }
+  a {
+    color: $dark-blue;
+  }
+  &__btn {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5B6A74;
+  }
+  .prev-page {
+    margin-right: 16px;
+  }
+  .next-page {
+    margin-left: 16px;
+  }
+
+}

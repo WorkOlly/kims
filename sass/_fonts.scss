@@ -1,0 +1,38 @@
+/*--------- font-face ---------*/
+@font-face {
+  font-family: "TTNorms-Regular";
+  src: url("../fonts/TTNorms-Regular.eot");
+  src: local("TTNorms-Regular"), local("UniversLTCYR-55Oblique"),
+  url("../fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/TTNorms-Regular.woff") format("woff"),
+  url("../fonts/TTNorms-Regular.woff2") format("woff2"),
+  url("../fonts/TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "TTNorms-Light";
+  src: url("../fonts/TTNorms-Light.eot");
+  src: local("TTNorms-Light"), local("UniversLTCYR-55Oblique"),
+  url("../fonts/TTNorms-Light.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/TTNorms-Light.woff") format("woff"),
+  url("../fonts/TTNorms-Light.woff2") format("woff2"),
+  url("../fonts/TTNorms-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*iconmoon*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?n1zkbt');
+  src:  url('../fonts/icomoon.eot?n1zkbt#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?n1zkbt') format('truetype'),
+  url('../fonts/icomoon.woff?n1zkbt') format('woff'),
+  url('../fonts/icomoon.svg?n1zkbt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

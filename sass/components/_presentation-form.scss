@@ -1,0 +1,71 @@
+.presentation {
+  color: $white;
+  background-color: $dark-blue;
+  padding: 0;
+  &__form-wrap {
+    padding: 150px 0;
+    @include r(992) {
+      padding: 100px 0;
+    }
+    @include r(767) {
+      padding: 60px 0;
+    }
+  }
+
+  .h2-subtitle {
+    text-align: center;
+    margin-bottom: 0;
+    @include rmin(768) {
+      max-width: 600px;
+      text-align: left;
+      margin-bottom: 16px;
+    }
+  }
+  &__form {
+    margin-top: 40px;
+    @include rmin(768) {
+      max-width: 430px;
+    }
+  }
+  .input-group {
+    input {
+      font-size: 14px;
+    }
+  }
+  .main-btn {
+    width: 100%;
+  }
+  .btn-img {
+    position: relative;
+    padding-left: 38px;
+
+    &:before {
+      content: url("../images/download.svg");
+      position: absolute;
+      left: 0;
+    }
+  }
+  &__img {
+    margin-top: -45px;
+    @include r(1365) {
+      margin-top: 0;
+      padding: 150px 0;
+    }
+    @include r(992) {
+      padding: 100px 0;
+    }
+    @include r(767) {
+      padding: 0;
+    }
+  }
+  @include r(767) {
+    .col-xs-12 {
+      order: 2;
+      &:last-of-type {
+        order: 1;
+        padding: 0;
+      }
+    }
+  }
+
+}

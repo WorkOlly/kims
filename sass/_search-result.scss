@@ -1,0 +1,68 @@
+.result {
+  &-search {
+    padding: 20px 0 100px;
+    @include r(768) {
+      padding: 0 0 60px;
+    }
+    .h2-title {
+      margin-bottom: 50px;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      background: $white;
+      padding: 0 24px;
+      text-transform: uppercase;
+      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.06);
+      @include r(767) {
+        padding: 0 16px;
+      }
+    }
+    &__item {
+      display: block;
+      padding: 24px 40px 24px 0;
+      letter-spacing: 0.1em;
+      position: relative;
+      @include fr;
+      &:not(:last-child) {
+        border-bottom: 1px solid $dark-blue;
+      }
+      &:before {
+        content: url("../images/more-arrow.svg");
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+.search{
+  &-help {
+    @include r(992) {
+      padding: 60px 0;
+    }
+    .h2-subtitle {
+      max-width: 545px;
+      @include r(767) {
+        max-width: none;
+        text-align: center;
+      }
+    }
+    &__text {
+      display: block;
+      font-size: 14px;
+      color: $grey;
+      margin-bottom: 40px;
+      @include fr;
+      @include r(767) {
+        text-align: center;
+      }
+    }
+    &__form {
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.error {
+  &-page {
+    background: $light-grey;
+  }
+  &-sectiom {
+    padding: 145px 0 200px;
+    @include r(1280) {
+      padding: 60px 0 100px;
+    }
+
+  }
+  &-wrap {
+    max-width: 875px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      max-width: 593px;
+      margin: 0 auto 32px;
+      @include r(600) {
+        max-width: 255px;
+        margin-bottom: 18px;
+      }
+    }
+  }
+  &-text {
+    font-size: 24px;
+    color: #7A8790;
+    text-align: center;
+    line-height: 140%;
+
+    @include r(767) {
+      font-size: 18px;
+    }
+    .main-btn {
+      margin-top: 48px;
+      @include r(600) {
+        width: 100%;
+      }
+    }
+  }
+}

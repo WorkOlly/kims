@@ -1,0 +1,77 @@
+
+@mixin anim{
+	transition: all .3s ease;
+}
+@mixin anim-linear{
+	transition: all .3s linear;
+}
+
+// btn transition fade
+@mixin transitionfade {
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: color, background-color;
+}
+
+// Button sizes
+@mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+
+/*FONTS*/
+@mixin fr {font-family: 'TTNorms-Regular',sans-serif;}
+@mixin fl {font-family: 'TTNorms-Light',sans-serif;}
+
+/*images*/
+
+@mixin cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+
+  // vertical-align at center
+@mixin vcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); }
+
+// centered text
+@mixin centertxt {
+  text-align: center;}
+
+
+
+/*=======================START-MEDIA=====================*/
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content; } }
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content; } }
+
+/*=======================END-MEDIA=====================*/
+//placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}
+
+
+
+@mixin css-lock($min-size: 1, $max-size: 1.4, $min-width: 20, $max-width: 100, $property: font-size, $unit: px) {
+  #{$property}: #{$max-size}#{$unit};
+  #{$property}: calc(#{$min-size}#{$unit} + (#{$max-size} - #{$min-size}) * ((100vw - #{$min-width}#{$unit}) / (#{$max-width} - #{$min-width})));
+  @media (max-width: #{$min-width}#{$unit}) {
+    #{$property}: #{$min-size}#{$unit}; }
+  @media (min-width: #{$max-width}#{$unit}) {
+    #{$property}: #{$max-size}#{$unit}; } }
+
+

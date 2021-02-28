@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Start</title>
+    <link rel="stylesheet" type="text/css" href="css/lib.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    -->
+  </head>
+  <body>
+    <noscript>
+      <div><strong>Для полной функциональности этого сайта необходимо включить JavaScript. Вот</strong><a href="https://artjoker.ua/ru/blog/how-to-enable-javascript/" target="_blank">инструкции,</a>как включить JavaScript в вашем браузере.
+        <link rel="stylesheet" type="text/css" href="css/without-js.css">
+      </div>
+    </noscript>
+    <!--if lte IE 8
+    p.off-js
+      | Ваш браузер устарел, пожалуйста
+      b обновите
+      |  его.
+    -->
+    <!-- wrapper start-->
+    <div class="wrapper">
+      <!-- header SECTION-->
+      <header class="header header__mn-close">
+        <div class="header__column--left"><a class="btn-burger" href="#"><span class="btn-burger__title">Меню</span></a>
+          <div class="location">
+                  <svg class="icon icon-place ">
+                    <use xlink:href="i/sprite/sprite.svg#place"></use>
+                  </svg><span class="location-active">Київ</span>
+          </div>
+        </div>
+        <div class="header__column--center"><img src="images/logo.svg" alt="#"></div>
+        <div class="header__column--right">
+          <div class="btns-header"><a href="#"><img src="images/icon-play.svg" alt="#"></a><a href="#"><img src="images/icon-apple.svg" alt="#"></a></div><a class="btn" href="#">замовити</a>
+        </div>
+      </header>
+      <header class="header header__mn-open">
+        <div class="header__column--left"><a class="btn-burger--close" href="#"><span class="close-icon"></span></a></div>
+        <div class="header__column--center"><img src="images/logo.svg" alt="#"></div>
+        <div class="header__column--right">
+          <div class="fast-btns-header">
+            <div class="search-block-wrap">
+              <div class="search-block">
+                <form class="js_validate">
+                  <div class="input-group search-form__wrap input-group__icon" data-error="Пожалуйста, заполните это поле">
+                    <input class="js-search" type="text" required="" placeholder="Знайти послугу..."><span class="search-block__elem icon-close js-delete-val"></span>
+                    <button class="search-btn icon-search" type="submit"></button><span class="search-close close-icon"></span>
+                    <div class="search-result"><a class="search-result__item">Хімчистка  дитячих  речей<span class="icon-search"></span></a><a class="search-result__item">Хімчистка  дитячих  речей<span class="icon-search"></span></a><a class="search-result__item">Хімчистка  дитячих  речей<span class="icon-search"></span></a><a class="search-result__item">Хімчистка  дитячих  речей<span class="icon-search"></span></a></div>
+                  </div>
+                </form>
+              </div>
+              <div class="overlay js-overlay-search"></div><span class="icon-search header-search js-show-search"></span>
+            </div><a href="#"><img src="images/icon-user.svg" alt="#"></a>
+            <div class="drop-lang"><span class="drop-lang--current">Укр</span></div>
+          </div>
+          <div class="btns-header"><a href="#"><img src="images/icon-play.svg" alt="#"></a><a href="#"><img src="images/icon-apple.svg" alt="#"></a></div><a class="btn" href="#">замовити</a>
+        </div>
+        <nav class="header-menu">
+          <div class="header-menu--wrap">
+            <div class="header-menu--fast">
+              <div class="location">
+                      <svg class="icon icon-place ">
+                        <use xlink:href="i/sprite/sprite.svg#place"></use>
+                      </svg><span>Київ</span>
+              </div>
+              <div class="btns-header"><a href="#"><img src="images/icon-play.svg" alt="#"></a><a href="#"><img src="images/icon-apple.svg" alt="#"></a></div>
+              <div class="fast-btns-header"><a class="fast-btns__item js-show-search" href="#"><img src="images/icon-search.svg" alt="#"></a><a class="fast-btns__item" href="#"><img src="images/icon-user.svg" alt="#"></a>
+                <div class="drop-lang fast-btns__item"><span class="drop-lang--current">Укр</span></div>
+              </div>
+            </div>
+            <div class="header-menu--items">
+              <div class="header-menu--top">
+                <ul class="header-menu--list">
+                  <li class="header-menu--item"><a class="header-menu--link" href="price.html">Ціни</a></li>
+                  <li class="header-menu--item js-item-with-submenu">
+                    <div class="header-menu--sub"><a class="header-menu--link" href="service.html">Послуги</a><span class="icon-open--submenu"><img src="images/icon-plus.svg" alt="#"></span></div>
+                    <div class="header-submenu--block">
+                      <ul class="header-submenu--list">
+                        <li class="header-submenu--item"><a href="#">Хімчистка повсякденного одягу</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка верхнього одягу</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка килимів</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка дитячих речей</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка домашнього текстилю</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка валіз</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка урочистого одягу</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка спецодягу</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка лижних костюмів</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка аксесуарів</a></li>
+                        <li class="header-submenu--item"><a href="#">Хімчистка взуття</a></li>
+                        <li class="header-submenu--item"><a href="#">Ремонт одягу</a></li>
+                        <li class="header-submenu--item"><a href="#">Ремонт взуття</a></li>
+                        <li class="header-submenu--item"><a href="#">Чистка шкіри і хутра</a></li>
+                        <li class="header-submenu--item"><a href="#">Додаткові послуги</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-menu--item item-submenu"><a class="header-menu--link">Пункти прийому</a></li>
+                  <li class="header-menu--item item-submenu"><a class="header-menu--link">Франшиза</a></li>
+                </ul>
+              </div>
+              <div class="header-menu--bottom">
+                <div class="header-menu--info">
+                  <div class="header-menu--block">
+                    <ul class="header-menu--contlist">
+                      <li><a href="about.html">Про нас</a></li>
+                      <li><a href="#">Контакти</a></li>
+                      <li><a href="delivery.html">Доставка</a></li>
+                    </ul>
+                  </div>
+                  <div class="header-menu--block">
+                    <ul class="header-menu--contlist">
+                      <li><a href="#">Послуги для бізнесу</a></li>
+                      <li><a href="news.html">Блог</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu--social">
+            <ul class="social__list">
+              <li class="social__item"><a class="social__link" href="#" target="_blank">
+                        <svg class="icon icon-facebook ">
+                          <use xlink:href="i/sprite/sprite.svg#facebook"></use>
+                        </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" target="_blank">
+                        <svg class="icon icon-instagram ">
+                          <use xlink:href="i/sprite/sprite.svg#instagram"></use>
+                        </svg></a></li>
+              <li class="social__item"><a class="social__link" href="#" target="_blank">
+                        <svg class="icon icon-youtube ">
+                          <use xlink:href="i/sprite/sprite.svg#youtube"></use>
+                        </svg></a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="choose-city"></div>
+      </header>
+      <!-- header SECTION-->
+      <main class="main main-page">
+        <div class="banner__main banner__main-top">
+          <!--img(src='images/image-01.jpg' alt='#')-->
+          <video class="banner-video js-banner-video" autoplay="" muted="" loop="">
+            <source src="http://html.myapp.com.ua/kims/fransh_KIMS.mp4" type="video/mp4">
+          </video>
+          <div class="banner__info">
+            <div class="h1-title">Прямо  до  порогу твого  будинку</div><span class="line-d"></span>
+            <div class="banner__form--block"><a class="main-btn" href="#">замовити</a>
+              <div class="banner__form"><a class="banner__popup js-fancybox" data-fancybox="" data-src="#courier-call">Заповнити форму</a>
+                <div class="banner__phone"><a href="tel:+380987747575">+38 098 774 75 75</a></div>
+                <div class="banner__close">
+                        <svg class="icon icon-close-form ">
+                          <use xlink:href="i/sprite/sprite.svg#close-form"></use>
+                        </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="service__section">
+          <div class="container">
+            <div class="h2-title">Послуги та ціни</div><span class="annotation">Широкий спектр послуг в сфері чистки і обслуговування одягу і взуття</span>
+            <div class="row service__row"><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-01 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-01"></use>
+                      </svg><span class="ttl">Хімчистка трикотажних виробів</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item height" href="#">
+                      <svg class="icon icon-service-02 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-02"></use>
+                      </svg><span class="ttl">Хімчистка дитячих речей</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-03 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-03"></use>
+                      </svg><span class="ttl">Хімчистка виробів костюмної групи</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-04 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-04"></use>
+                      </svg><span class="ttl">Хімчистка текстильних і шкіряних аксесуарів</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-05 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-05"></use>
+                      </svg><span class="ttl">Химчистка повседневной одежды</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-06 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-06"></use>
+                      </svg><span class="ttl">Хімчистка суконь і спідниць</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-07 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-07"></use>
+                      </svg><span class="ttl">Хімчистка домашнього текстилю</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-08 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-08"></use>
+                      </svg><span class="ttl">Хімчистка домашнього одягу</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-09 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-09"></use>
+                      </svg><span class="ttl">Взуття</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-10 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-10"></use>
+                      </svg><span class="ttl">Хімчистка хутряних виробів</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-11 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-11"></use>
+                      </svg><span class="ttl">Хімчистка спортивного одягу</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-12 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-12"></use>
+                      </svg><span class="ttl">Хімчистка сумок</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-13 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-13"></use>
+                      </svg><span class="ttl">Хімчистка текстильного верхнього одягу</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-14 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-14"></use>
+                      </svg><span class="ttl">Ремонт одягу</span><span class="price">від 550 грн</span></a><a class="col-xs-6 col-sm-4 col-md-3 service__item" href="#">
+                      <svg class="icon icon-service-15 ">
+                        <use xlink:href="i/sprite/sprite.svg#service-15"></use>
+                      </svg><span class="ttl">Додаткові послуги</span></a></div>
+          </div>
+        </section>
+        <section class="bg-grey product-bf">
+          <div class="container">
+            <div class="h2-title">#Kims_before_after</div>
+            <div class="product-bf-block"><span class="annotation">Шукайте хештег в нашому Instagram</span>
+              <div class="row product-bf-row">
+                <div class="product-bf-item">
+                  <div class="gallery-product__slider js_gallery-product">
+                    <!-- Add navigation buttons-->
+                    <div class="slider-nav">
+                      <div class="swiper-button-prev swiper-button"><i class="icon-arr icon">
+                                <svg class="icon icon-arrowL ">
+                                  <use xlink:href="i/sprite/sprite.svg#arrowL"></use>
+                                </svg></i></div>
+                      <div class="swiper-button-next swiper-button"><i class="icon-arr icon">
+                                <svg class="icon icon-arrowR ">
+                                  <use xlink:href="i/sprite/sprite.svg#arrowR"></use>
+                                </svg></i></div>
+                    </div>
+                    <!-- Swiper-->
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a class="gallery-product__item" href="#">
+                            <div class="image-h"><img src="images/do.jpg" alt="#"><span class="sticker">До</span></div>
+                            <div class="image-h"><img src="images/posle.jpg" alt="#"><span class="sticker">После</span></div></a></div>
+                        <div class="swiper-slide"><a class="gallery-product__item" href="#">
+                            <div class="image-h"><img src="images/before-1.jpg" alt="#"><span class="sticker">До</span></div>
+                            <div class="image-h"><img src="images/after-1.jpg" alt="#"><span class="sticker">После</span></div></a></div>
+                        <div class="swiper-slide"><a class="gallery-product__item" href="#">
+                            <div class="image-h"><img src="images/before-2.jpg" alt="#"><span class="sticker">До</span></div>
+                            <div class="image-h"><img src="images/after-2.jpg" alt="#"><span class="sticker">После</span></div></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-bf-item">
+                  <div class="h3-title">Ремонт підошви туфлів</div>
+                  <p>Деякі люди вважають за краще, щоб на передню половину підошви був надітий Sole Protector. Протектор - це дуже тонкий шматок гуми, вирізаний за розміром взуття, який захищає шкіряну підошву від зносу або пошкодження від води. Деякі люди вважають за краще, щоб на передню половину підошви був надітий Sole Protector.</p><span class="term">Строки - 5 днів</span><a class="main-btn border-black" href="#">замовити послугу</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="banner__main"><img src="images/image-02.jpg" alt="#">
+          <div class="banner__info--left">
+            <div class="container">
+              <div class="h1-title">Прямо до порогу твого будинку</div><a class="main-btn" href="#">замовити</a>
+            </div>
+          </div>
+        </div>
+        <section class="partners-bf">
+          <div class="h2-title text-center">Нам довіряють</div>
+          <!-- +icon("arrowL")-->
+          <div class="gallery-partners__slider js_gallery-partners">
+            <!-- Add navigation buttons-->
+            <div class="slider-nav">
+              <div class="swiper-button-prev swiper-button">
+                      <svg class="icon icon-arrowLt ">
+                        <use xlink:href="i/sprite/sprite.svg#arrowLt"></use>
+                      </svg>
+              </div>
+              <div class="swiper-button-next swiper-button">
+                      <svg class="icon icon-arrowRt ">
+                        <use xlink:href="i/sprite/sprite.svg#arrowRt"></use>
+                      </svg>
+              </div>
+            </div>
+            <!-- Swiper-->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+                <div class="swiper-slide"><a class="gallery-partners__item" href="#"><img src="images/image-17.png" alt="#"></a></div>
+              </div>
+            </div>
+            <div class="swiper-pagination gallery-partners__pagination"></div>
+          </div>
+        </section>
+        <!-- header SECTION-->
+        <section class="content__section">
+          <div class="container">
+            <div class="content__scroll content-block js__scroll">
+              <div class="h4-title">Ціни на хімчистку в Київі</div>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+              <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке новых предложений. Товарищи! дальнейшее развитие различных форм деятельности способствует подготовки и реализации соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.</p>
+            </div>
+          </div>
+        </section>
+        <!-- header SECTION-->
+      </main>
+      <!--footer-->
+      <footer class="footer">
+        <div class="header">
+          <div class="header__column--left">
+            <div class="location">
+                    <svg class="icon icon-place ">
+                      <use xlink:href="i/sprite/sprite.svg#place"></use>
+                    </svg><span>Київ</span>
+            </div>
+          </div>
+          <div class="header__column--center"><img src="images/logo.svg" alt="#"></div>
+          <div class="header__column--right">
+            <div class="btns-header"><a href="#"><img src="images/icon-play.svg" alt="#"></a><a href="#"><img src="images/icon-apple.svg" alt="#"></a></div><a class="btn btn-order" href="#">замовити</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row footer-row">
+            <div class="footer-nav--holder">
+              <div class="footer-nav-list">
+                <div class="h4-title">Про нас</div>
+                <ul class="footer-nav">
+                  <li><a class="footer-nav-link" href="price.html">Ціни</a></li>
+                  <li><a class="footer-nav-link" href="#">Пункти прийому</a></li>
+                  <li><a class="footer-nav-link" href="service-corp.html">Корпоративна хімчистка</a></li>
+                  <li><a class="footer-nav-link" href="#">Франшиза</a></li>
+                  <li><a class="footer-nav-link" href="news.html">Новини</a></li>
+                  <li><a class="footer-nav-link" href="about.html">Про нас</a></li>
+                  <li><a class="footer-nav-link" href="contact.html">Контакти</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav-list">
+                <div class="h4-title">Послуги</div>
+                <ul class="footer-nav two-column">
+                  <li><a class="footer-nav-link" href="#">Хімчистка повсякденного одягу</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка аксесуарів</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка дитячих речей</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка спецодягу</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка урочистого одягу</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка взуття</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка верхнього одягу</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка килимів</a></li>
+                  <li><a class="footer-nav-link" href="#">Чистка шкіри та хутра</a></li>
+                  <li><a class="footer-nav-link" href="#">Ремонт одягу</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка домашнього текстилю</a></li>
+                  <li><a class="footer-nav-link" href="#">Ремонт взуття</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка лижних костюмів</a></li>
+                  <li><a class="footer-nav-link" href="#">Додаткові послуги</a></li>
+                  <li><a class="footer-nav-link" href="#">Хімчистка валіз</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-social">
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                          <svg class="icon icon-facebook ">
+                            <use xlink:href="i/sprite/sprite.svg#facebook"></use>
+                          </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                          <svg class="icon icon-instagram ">
+                            <use xlink:href="i/sprite/sprite.svg#instagram"></use>
+                          </svg></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                          <svg class="icon icon-youtube ">
+                            <use xlink:href="i/sprite/sprite.svg#youtube"></use>
+                          </svg></a></li>
+              </ul>
+              <div class="footer-call"><a class="main-btn">Передзвонити мені</a></div>
+              <div class="footer-phone"><a class="footer-phone--number" href="+38 098 774 75 75">+38 098 774 75 75</a><a class="footer-phone--number" href="+38 098 774 75 75">+38 098 774 75 75</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row footer-row">
+              <div class="clean-popup">
+                      <svg class="icon icon-cleaning-icon ">
+                        <use xlink:href="i/sprite/sprite.svg#cleaning-icon"></use>
+                      </svg>
+              </div>
+              <div class="footer-copyright">© Kims,<span> 2020</span>. Всі права захищені.</div>
+              <div class="footer-develop"><span>Розробка і підтримка сайту -</span><a href="http://artjoker.ua/"><img class="footer-logo--art" src="images/artjoker.svg" alt="#"></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/lib.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNAljGFFDKq6W69dSVoW52nEhHtQ8nV78"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <div class="fancybox-popup" id="courier-call" style="display:none;"><span class="h3-title">Сделайте заявку, а мы пришлем курьера за грязными вещами!</span>
+      <form class="courier__form js_validate" action="#">
+        <div class="row">
+          <div class="input-group js-form-label col-xs-12" data-error="Пожалуйста, заполните это поле">
+            <input type="text" name="name" required="" placeholder="піб" data-validate="text">
+          </div>
+          <div class="input-group js-form-label col-xs-12" data-error="Пожалуйста, заполните это поле">
+            <input type="text" name="phone" required="" placeholder="телефон" data-validate="phone">
+          </div><span class="courier__subtitle col-xs-12">Откуда забирать?</span>
+          <div class="input-group js-form-label col-xs-12" data-error="Пожалуйста, заполните это поле">
+            <input type="text" name="city" required="" placeholder="Місто" data-validate="text">
+          </div>
+          <div class="input-group js-form-label col-xs-12" data-error="Пожалуйста, заполните это поле">
+            <input type="text" name="street" required="" placeholder="Вулиця" data-validate="text">
+          </div>
+          <div class="input-group js-form-label col-xs-6" data-error="Пожалуйста, заполните это поле">
+            <input type="text" name="street" required="" placeholder="будинок*" data-validate="text">
+          </div>
+          <div class="input-group js-form-label col-xs-6" data-error="Пожалуйста, заполните это поле">
+            <input type="text" name="street" required="" placeholder="квартира / офіс*" data-validate="text">
+          </div><span class="courier__subtitle col-xs-12">додаткова інформація</span>
+          <div class="input-group col-xs-6">
+            <input type="date" name="date" placeholder="дд.мм.гг">
+          </div>
+          <div class="input-group js-form-label col-xs-6">
+            <label class="courier__clean checkbox-label">
+              <input class="checkbox-input courier__clean-checkbox" type="checkbox" checked name="fast-clean"><span class="checkbox-name">Термінова чистка</span>
+            </label>
+          </div>
+          <div class="input-group js-form-label input-field_text col-xs-12">
+            <textarea name="comment" required="" placeholder="комментар" data-validate="text"></textarea>
+          </div>
+          <div class="col-xs-12">
+            <div class="input-group input-file"><span class="upload-text">фото забруднення</span>
+              <input class="upload" type="file" name="file" required="" data-validate="">
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <button class="main-btn dark-btn" type="submit">відправити</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

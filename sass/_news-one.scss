@@ -1,0 +1,86 @@
+.news-one{
+  padding: 0;
+  padding-bottom: 150px;
+  &__page {
+    .breadcrumbs {
+      background: $white;
+      margin-bottom: 20px;
+    }
+    .container {
+      width: 920px;
+    }
+  }
+  &__content {
+    a {
+      color: #001E37;
+    }
+  }
+  .news-date {
+    margin-bottom: 40px;
+  }
+  &__img {
+    margin-bottom: 40px;
+  }
+}
+
+.recomend-service {
+  padding: 120px 0;
+  @include r(767) {
+    padding: 40px 0;
+  }
+  .h2-title {
+    margin-bottom: 40px;
+    @include centertxt;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    padding: 0 24px;
+    text-transform: uppercase;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.06);
+    @include r(767) {
+      padding: 0 16px;
+    }
+  }
+  &__item {
+    display: block;
+    padding: 24px 40px 24px 0;
+    letter-spacing: 0.1em;
+    position: relative;
+    @include fr;
+    &:not(:last-child) {
+      border-bottom: 1px solid $dark-blue;
+    }
+    &:before {
+      content: url("../images/more-arrow.svg");
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.similar-news {
+  padding: 150px 0;
+  @include r(767) {
+    padding: 60px 0;
+  }
+  .container {
+    width: 1350px;
+  }
+  .h2-title {
+    text-align: center;
+    margin-bottom: 50px;
+    @include r(767) {
+      margin-bottom: 24px;
+    }
+  }
+  .news-col {
+    @include r(992){
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+}
